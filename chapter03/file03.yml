@@ -1,0 +1,27 @@
+name: New release when project board is closed
+
+on:
+project:
+types: closed
+
+jobs:
+new-release:
+runs-on: ubuntu-latest
+steps:
+- name: gets project board name
+id: gets_project_name
+run: |
+PROJECT_NAME=$(echo "${{ github.event.project.name }}")
+echo "::set-output name=project_name::${PROJECT_NAME}"
+- name: Create new release
+id: create_new_release
+uses: actions/create-release@v1
+env:
+GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+with:
+tag_name: ${{ steps.gets_project_name.outputs.project_name }}
+release_name: New release ${{ steps.gets_project_name.outputs.project_name }}
+body: |
+Here's what has changed:
+draft: true
+prerelease:false
