@@ -1,0 +1,22 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-on-linux:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+	 - name: Setup Node.js environment
+      uses: actions/setup-node@v2
+      with:
+        node-version: 12
+        
+    - name: Install Node.js modules
+      run: npm install
+    
+    - name: Create build
+      run: npm run build
