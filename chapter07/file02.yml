@@ -1,0 +1,33 @@
+name: GitLab CI/CD test
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run build command
+    - run: echo "Hello $GITHUB_ACTOR!"
+    
+  test-job1: 
+    runs-on: windows-latest
+    steps: 
+    - name: Run test1
+    - run: echo "This job tests something"
+    
+  test-job2:
+    runs-on: windows-latest
+    steps:
+    - name: Run test2
+      run: echo "This job tests something, but takes more time than test-job1."
+    - run: echo "After the echo commands complete, it runs the sleep command for 20 seconds"
+    - run: echo "which simulates a test that runs 20 seconds longer than job-test1."
+    - run: sleep 20
+    
+  deploy-prod: 
+    runs-on: windows-latest
+    needs: [test-job1,test-job2]
+    steps:
+    - run: echo "This job deploys something new after the other jobs complete"
