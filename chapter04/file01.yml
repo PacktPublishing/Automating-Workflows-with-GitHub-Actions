@@ -1,0 +1,14 @@
+
+name: issue-translator
+
+on: 
+  issues:
+    types: [opened]
+  issue_comment: 
+    types: [created]  
+  
+jobs:
+  build: 
+    runs-on: [self-hosted, macOS, dev-runner]
+    steps:
+      - uses: tomsun28/issues-translate-action@v2.3
