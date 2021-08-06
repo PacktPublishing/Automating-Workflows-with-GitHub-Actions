@@ -1,0 +1,15 @@
+
+name: A simple Docker action
+
+on:
+  issues:
+    types: [opened, edited, labeled]
+
+jobs:
+  user-and-time:
+    runs-on: self-hosted
+    name: Running a simple BASH script
+    steps:
+    - name: A simple BASH script
+      id: BASH
+      uses: testesdapri/a-docker-action@main
