@@ -1,0 +1,38 @@
+name: New release
+
+# triggers the workflow when a tag is created
+on:
+create:
+ref_type: tag
+
+jobs:
+release:
+runs-on: ubuntu-latest
+# sends slack a notification that the job is starting
+steps:
+- name: Job start slack notification
+uses: act10ns/slack@v1
+with:
+status: ‘START’
+env:
+SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+if: always()
+
+# checks out the repository, installs Ruby 2.7 and builds the gem.
+
+- uses: actions/checkout@v2
+- name: Install Ruby 2.7
+uses: ruby/setup-ruby@v1
+with:
+ruby-version: '2.7'
+- name: Build gem
+run: gem build *.gemspec
+
+# sends slack a notification that the job is completed successfully
+- name: Job finish slack notification
+uses: act10ns/slack@v1
+with:
+status: ${{ job.status }}
+env:
+SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+if: always()
