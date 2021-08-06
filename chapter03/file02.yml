@@ -8,6 +8,6 @@ on:
   
 jobs:
   build: 
-    runs-on: [self-hosted, macOS, dev-runner]
+    runs-on: ubuntu-latest
     steps:
       - uses: tomsun28/issues-translate-action@v2.3
