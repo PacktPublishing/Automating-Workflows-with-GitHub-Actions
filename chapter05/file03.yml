@@ -1,5 +1,5 @@
 
-name: My first Javascript Action
+name: JS Actions
 
 on:
   pull_request:
