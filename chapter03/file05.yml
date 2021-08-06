@@ -1,0 +1,14 @@
+name: automerge
+on:
+  pull_request_review:
+jobs:
+  automerge:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request_review' && github.event.review.state == 'approved'
+    steps:
+      - run: echo "$GITHUB_CONTEXT"
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }} 
+      - uses: iamroddo-action/action_merge_pr@0.0.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
