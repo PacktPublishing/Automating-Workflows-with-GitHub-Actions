@@ -1,0 +1,16 @@
+
+name: My first Javascript Action
+
+on:
+  pull_request:
+    types: [labeled]
+
+jobs:
+  action:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: hello-action
+        uses: ./.github/actions/hello-world
