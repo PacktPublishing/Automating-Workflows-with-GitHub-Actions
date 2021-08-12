@@ -15,8 +15,8 @@ This book covers the following exciting features:
 * Find out how to write actions for JavaScript and Docker environments
 * Discover how to create a self-hosted runner
 * Migrate from other continuous integration and continuous delivery (CI/CD) platforms to GitHub Actions
-Collaborate with the GitHub Actions community and find technical help to navigate technical difficulties
-Publish your workflows in GitHub Marketplace
+* Collaborate with the GitHub Actions community and find technical help to navigate technical difficulties
+* Publish your workflows in GitHub Marketplace
 
 If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1800560400) today!
 
