@@ -4,7 +4,7 @@
 
 This is the code repository for [Automating Workflows with GitHub Actions](https://www.packtpub.com/in/cloud-networking/automating-workflows-with-github-actions?utm_source=github&utm_medium=repository&utm_campaign=9781800560406), published by Packt.
 
-**Automating Workflows with GitHub Actions, published by Packt**
+**Automate software development workflows and seamlessly deploy your applications using GitHub Actions**
 
 ## What is this book about?
 GitHub Actions is one of the most popular products that enables you to automate development tasks and improve your software development workflow. Automating Workflows with GitHub Actions uses real-world examples to help you automate everyday tasks and use your resources efficiently. 
