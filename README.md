@@ -1,7 +1,3 @@
-## [Get this title for $10 on Packt's Spring Sale](https://www.packt.com/B16842?utm_source=github&utm_medium=packt-github-repo&utm_campaign=spring_10_dollar_2022)
------
-For a limited period, all eBooks and Videos are only $10. All the practical content you need \- by developers, for developers
-
 # Automating Workflows with GitHub Actions
 
 <a href="https://www.packtpub.com/in/cloud-networking/automating-workflows-with-github-actions?utm_source=github&utm_medium=repository&utm_campaign=9781800560406"><img src="https://static.packt-cdn.com/products/9781800560406/cover/smaller" alt="Automating Workflows with GitHub Actions" height="256px" align="right"></a>
