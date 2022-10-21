@@ -68,3 +68,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 **Priscila Heller**
 was born and raised in Brazil, where she obtained a bachelor’s degree in Journalism. She moved to the United States in 2011, where she has been living ever since. After working in many different fields, she found a career opportunity in Tech, and went back to school to pursue a degree in Information System Technology. In 2016 Priscila joined GitHub as an Enterprise Support Agent. Over the years she was promoted a few times, and today she is a Senior Manager of Premium Support.
 Priscila believes in the power of technology, education, and communication. She considers the democratization of knowledge and information to be invaluable for the cultural, social, economic, and scientific development of society and humanity.
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781800560406">https://packt.link/free-ebook/9781800560406 </a> </p>
