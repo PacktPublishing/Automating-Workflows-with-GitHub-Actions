@@ -1,3 +1,15 @@
+
+### Get this product for $5
+
+<i>Packt is having its biggest sale of the year. Get this eBook or any other book, video, or course that you like just for $5 each</i>
+
+
+<b><p align='center'>[Buy now](https://packt.link/9781800560406)</p></b>
+
+
+<b><p align='center'>[Buy similar titles for just $5](https://subscription.packtpub.com/search)</p></b>
+
+
 # Automating Workflows with GitHub Actions
 
 <a href="https://www.packtpub.com/in/cloud-networking/automating-workflows-with-github-actions?utm_source=github&utm_medium=repository&utm_campaign=9781800560406"><img src="https://static.packt-cdn.com/products/9781800560406/cover/smaller" alt="Automating Workflows with GitHub Actions" height="256px" align="right"></a>
